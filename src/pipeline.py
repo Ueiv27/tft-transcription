@@ -46,7 +46,7 @@ class TranscriptionETL:
             
             result = self.pipe(
                 file_path, 
-                generate_kwargs={"language": "english"}
+                generate_kwargs={"language": "italian"}
             )
             
             # Salvataggio (Load step)
