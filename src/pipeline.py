@@ -46,7 +46,11 @@ class TranscriptionETL:
             
             result = self.pipe(
                 file_path, 
-                generate_kwargs={"language": "italian"}
+                generate_kwargs={
+                    "language": "english",
+                    "task": "transcribe"
+                    # sarebbe simpatico inserire un initial prompt nel quale inserire contesto e le keyworkds di tft
+                }
             )
             
             # Salvataggio (Load step)
